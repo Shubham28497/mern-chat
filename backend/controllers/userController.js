@@ -27,7 +27,8 @@ const registerUser = asyncHandler(async (req,res) => {
     }
     else{
         res.status(400)
-        throw new Error("User Not Found")
+        throw new Error("Failed to create user")
     }
 });
 
+module.exports= {registerUser}
